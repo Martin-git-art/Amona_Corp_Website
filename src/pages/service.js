@@ -1,6 +1,7 @@
 import Footer from '@/components/layouts/Footer.js';
 import Header from '@/components/layouts/Header.js';
 import Banner from '@/components/layouts/Banner.js';
+import ServiceDetail from '@/components/ServiceDetail';
 
 export default function Service() {
   return (
@@ -9,7 +10,7 @@ export default function Service() {
       <Header />
       <Banner
         title="Service"
-        description="porro placeat quibusdam quia assumenda numquam molestias."
+        description="Upgrade Your Business Communication Today!"
         breadcrumbs={[
           { href: '/', text: 'Home' },
           { href: '/service', text: 'Service', current: true },
@@ -17,6 +18,7 @@ export default function Service() {
       />
  
       </div>
+      <ServiceDetail/>
         <Footer/>
     </>
   );

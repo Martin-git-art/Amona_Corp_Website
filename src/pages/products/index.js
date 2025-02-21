@@ -9,7 +9,7 @@ export default function Product() {
                 <Header />
                 <Banner
                     title="Products"
-                    description="Esse dolorum voluptatum ullam est sint nemo et est ipsa."
+                    description="Smart solutions designed for you."
                     breadcrumbs={[
                         { href: '/', text: 'Home' },
                         { href: '/products', text: 'Products', current: true },

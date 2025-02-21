@@ -966,6 +966,9 @@ section,
   }
 }
 
+p{
+  font-family: "Raleway";
+}
 .hero .about-info {
   overflow: hidden;
   position: relative;
@@ -1076,7 +1079,21 @@ section,
 # Schedule Section
 --------------------------------------------------------------*/
 .schedule {
+  background: #b8b8b836;
   --background-color: color-mix(in srgb, var(--alt-background-color), transparent 95%);
+}
+
+.cta-btn {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.about-section a:hover {
+  color: #fff !important;
 }
 
 .schedule .nav-tabs {
@@ -1727,4 +1744,9 @@ section,
 .map iframe {
   width: 100%;
   height:100%;
+}
+
+.aboutImg{
+  width: 600px;
+  border-radius: 7px;
 }

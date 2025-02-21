@@ -4,7 +4,7 @@ import categories from "../../public/DB/categories.json";
 import { useRouter } from "next/router";
 
 export default function ContactForm() {
-    const basePath = useRouter();
+    const {basePath} = useRouter();
     const [filteredProducts, setFilteredProducts] = useState(products.products);
     const handleFilter = (id) => setFilteredProducts(id === 'all' ? products.products : products.products.filter(p => p.categoryId === id));
     

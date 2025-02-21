@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import menuData from '../../../public/DB/menu.json';
 
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
             <div className="footer-top">
                 <div className="container">
                     <div className="row gy-4">
-                        <div className="col-lg-4 col-md-6 footer-about">
+                        <div className="col-lg-5 col-md-6 footer-about">
                             <a href="index.html" className="logo d-flex align-items-center me-auto">
                                 <img src={`${basePath}/assets/img/logo.png`} alt="" />
                             </a>
@@ -21,29 +22,23 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-3 footer-links">
+                        <div className="col-lg-4 col-md-3 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Terms of service</a></li>
-                                <li><a href="#">Privacy policy</a></li>
+                                {menuData.map(({ name, href, children }, index)=>(
+                                    <li><a href={href}>{name}</a></li>
+                                ))}
                             </ul>
                         </div>
 
-                        <div className="col-lg-2 col-md-3 footer-links">
+                        <div className="col-lg-3 col-md-3 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Web Development</a></li>
-                                <li><a href="#">Product Management</a></li>
-                                <li><a href="#">Marketing</a></li>
-                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">PABX Solutions</a></li>
                             </ul>
                         </div>
 
-                        <div className="col-lg-2 col-md-3 footer-links">
+                        {/* <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Hic solutasetp</h4>
                             <ul>
                                 <li><a href="#">Molestiae accusamus iure</a></li>
@@ -52,9 +47,9 @@ export default function Footer() {
                                 <li><a href="#">Dilecta</a></li>
                                 <li><a href="#">Sit quas consectetur</a></li>
                             </ul>
-                        </div>
+                        </div> */}
 
-                        <div className="col-lg-2 col-md-3 footer-links">
+                        {/* <div className="col-lg-2 col-md-3 footer-links">
                             <h4>Nobis illum</h4>
                             <ul>
                                 <li><a href="#">Ipsam</a></li>
@@ -63,7 +58,7 @@ export default function Footer() {
                                 <li><a href="#">Trodelas</a></li>
                                 <li><a href="#">Flexo</a></li>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

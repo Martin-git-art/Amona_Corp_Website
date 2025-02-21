@@ -24,7 +24,7 @@ export default function Category({ id }) {
         <>
             <Banner
                 title={categoryName}
-                description="Esse dolorum voluptatum ullam est sint nemo et est ipsa."
+                description="RF Repeaters Application Scenarios:Hotels, Shopping Malls."
                 breadcrumbs={[
                     { href: '/', text: 'Home' },
                     { href: '/products', text: 'Products' },
