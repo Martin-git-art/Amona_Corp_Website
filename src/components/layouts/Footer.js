@@ -26,7 +26,7 @@ export default function Footer() {
                             <h4>Useful Links</h4>
                             <ul>
                                 {menuData.map(({ name, href, children }, index)=>(
-                                    <li><a href={href}>{name}</a></li>
+                                    <li><a href={`${basePath}${href}`}>{name}</a></li>
                                 ))}
                             </ul>
                         </div>
