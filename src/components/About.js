@@ -9,10 +9,10 @@ export default function About() {
     <section id="contact" className="about-section">
       <div class="container">
         <div class="row gy-4 mt-1">
-          <div class="col-lg-6 map">
-          <img src={`${basePath}/assets/img/hero-bg.jpg`} alt="" className="aboutImg" />
+          <div class="col-lg-6 map mt-0">
+          <img src={`${basePath}/assets/img/about-bg.jpg`} alt="" className="aboutImg" />
           </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mt-0">
                 <h1>{data.heading}</h1>
                 <p>{data.description}</p>
                 <div>
