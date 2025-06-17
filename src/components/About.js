@@ -16,7 +16,7 @@ export default function About() {
                 <h1>{data.heading}</h1>
                 <p>{data.description}</p>
                 <div>
-                <a class="cta-btn d-inline d-sm-inline" href={`${basePath}/service}`}>Read More</a>
+                <a class="cta-btn d-inline d-sm-inline" href={`${basePath}/service`}>Read More</a>
                 </div>
                 
           </div>
