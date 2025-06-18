@@ -17,8 +17,8 @@ export default function Footer() {
                             <div className="footer-contact pt-3">
                                 <p>Blk 3005</p>
                                 <p>Ubi Ave 3, #03-56 Singapore (408861)</p>
-                                <p className="mt-3"><strong>Phone:</strong> <span>+86 15919070082</span></p>
-                                <p><strong>Email:</strong> <span>info@afutelecom.com</span></p>
+                                <p className="mt-3"><strong>Phone:</strong> <span>15919070082</span></p>
+                                <p><strong>Email:</strong> <span>contact@amona-corp.com</span></p>
                             </div>
                         </div>
 
