@@ -7,7 +7,7 @@ export default function ManinBanner() {
     return (
         <main className="main">
             <section id="hero" className="hero section dark-background">
-                <img src={`${basePath}/assets/img/hero-bg.jpg`} alt="" className="" />
+                <img src={`${basePath}/assets/img/hero-bg.webp`} alt="" className="" />
                 <div className="container d-flex flex-column align-items-center text-center rm-mt-auto mt-auto">
                     <h2 className="">{data.heading1}<br /><span>{data.heading2}</span>{data.heading3}</h2>
                     <p className="d-sm-none d-md-block d-none">{data.subheading}</p>
