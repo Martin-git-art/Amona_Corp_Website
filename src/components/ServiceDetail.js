@@ -19,6 +19,17 @@ export default function ServiceDetail() {
                 </div>   
           </div>
         </div>
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1>{data.serviceTitle}</h1>
+                <p>{data.serviceDesc}</p>
+                <div>
+                </div>   
+          </div>
+          <div class="col-lg-6 map">
+          <img src={`${basePath}/assets/img/serv2.jpg`} alt="" className="aboutImg2" />
+          </div>
+        </div>
       </div>
     </section>
   )
